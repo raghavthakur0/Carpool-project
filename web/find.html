@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			position:absolute;
+			background-image: url(a.jpg) ;
+                         background-size: 1500px;
+                         background-repeat: no-repeat;
+                         background-attachment: fixed;
+                        margin:0;
+	                font-family: sans-serif;
+
+		}
+.box{
+    background-attachment: scroll;
+    margin-top: 130px;
+    margin-left: 90px;
+    background-image: url(b.jpg);
+    color: #000000;
+    width: 350px;
+    height:630px;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    letter-spacing: 0.8px;
+}
+.ip {
+	border-color: yellow;
+	width: 310px;
+	height: 30px;
+	font-weight:bold;
+}
+.ip::placeholder {
+	text-align:center;
+
+}
+.btn {
+   width:90px;
+   height:34px;
+   margin-left:113px;
+   background-color:#ffd000;
+   border-color: #ffd000;
+}
+.div1{
+    background-image: url(n.jpg);
+    color:whitesmoke;
+    text-align: center;
+}
+.div2
+{
+    width: 1200px;
+    height: 18px;  
+}
+.div2 a
+{
+    float: left;
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    padding:40px 85px;
+}
+.div2 a:hover{color:red;}
+	</style>
+	<title></title>
+</head>
+<body>
+   <header>
+       <div class="div1">
+           <h1>CarPool4You</h1>
+       </div>
+     <div class="div2">
+               <nav>
+                   <a class="active" href="index.html">Home</a>
+		<a href="find.html">Find a Ride</a>
+		<a href="index.html#c1">About Us</a>
+                <a href="signup.html">Sign Up</a>
+		<a href="login.html">Log Out</a>
+
+               </nav>
+     </div>
+</header>
+    <form action="find.jsp">
+<div class="box">
+	<h1>
+		<center><font face="Arial Black">Find a Ride</font></center>
+		</h1><br>
+	<b>Select Location :</b><br><br>
+		
+	<input type="text" placeholder="Select Location" class="ip" name="location"><br><br>
+		
+	<b>Pick Up Date :</b><br><br>
+	<input type="date" value="" placeholder="Pick Up Date" class="ip" name="date"><br><br>
+	
+		<b>Car Type : </b><br><br>
+		
+	    <select class="ip" name="type">
+	    	<option>SUV</option>
+	    	<option>HatchBack</option>
+	    	<option>Sedan</option>
+	    	<option>CrossOver</option>
+	    </select>
+		<br><br><b>Drop Place :</b><br><br>
+		
+	<input type="text" placeholder="Drop place" class="ip" name="place"><br><br>
+	<button type="submit" class="btn"><b> Go for it</b></button>
+</div>
+    </form>
+</body>
+</html>
